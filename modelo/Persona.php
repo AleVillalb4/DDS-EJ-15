@@ -11,7 +11,6 @@ class Persona
     private $FechaNacimiento;
     private $ObraSocial;
     private $ListDocumentos = array();
-    private $TipoDocumento;
 
     public function getId()
     {
@@ -76,16 +75,6 @@ class Persona
         $this->ListDocumentos[] = $doc;
     }
 
-    public function getTipoDocumento()
-    {
-        return $this->TipoDocumento;
-    }
-
-
-    public function setTipoDocumento($TipoDocumento)
-    {
-        $this->TipoDocumento = $TipoDocumento;
-    }
 
     public function MostrarDatos()
     {
